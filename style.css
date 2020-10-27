@@ -1,8 +1,11 @@
-﻿* {box-sizing :border-box;}
+﻿* {
+  box-sizing :border-box;
+   margin :0;
+}
 html {
   font-family: Arial, sans-serif;
 }
-body { margin :0;}
+
 #header {
 position :relative;
 width :100%;
@@ -40,13 +43,13 @@ color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-#logo { 
+#logo {
  position: absolute;
   top: 10px;
   left: 400px;
 opacity:0.5;
 border-radius:10%;
- 
+
 width:400px;
 }
 
@@ -98,10 +101,14 @@ height : 800px;
 background-color: #ccc;
 
 }
+@media screen and (max-width: 700px) {
+  #jumbotron {   
+  width = 100%;
+  }
+}
 
 
-
-#center { 
+#center {
 width : 60%;
 height:100%;
 float : left;
